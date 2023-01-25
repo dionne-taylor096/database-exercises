@@ -11,3 +11,5 @@ DESCRIBE fruits;
 SELECT *
 FROM fruits
 ORDER BY quantity;
+-- CODE BELOW IS USED TO RUN QUERY IN TERMINAL
+-- \. /Users/tux/codeup-data-science/database-exercises/mysql_introduction.sql
