@@ -1,18 +1,18 @@
 -- Find all current or previous employees with first names 'Irena', 'Vidya', or 'Maya' using IN. 
--- Enter a comment with the number of records returned. 731 records
+-- Enter a comment with the number of records returned. 709 records
 SELECT *
 FROM employees
-WHERE first_name IN ('Irene','Vidya','Maya');
+WHERE first_name IN ('Irena','Vidya','Maya');
 -- Find all current or previous employees with first names 'Irena', 'Vidya', or 'Maya', as in Q2, but use OR instead of IN. 
--- Enter a comment with the number of records returned. 263 Does it match number of rows from Q2? No 
+-- Enter a comment with the number of records returned. 249 Does it match number of rows from Q2? No 
 SELECT *
 FROM employees
-WHERE first_name = 'Irene' OR 'Vidya' OR 'Maya';
+WHERE first_name = 'Irena' OR 'Vidya' OR 'Maya';
 -- Find all current or previous employees with first names 'Irena', 'Vidya', or 'Maya', using OR, and who is male. 
--- Enter a comment with the number of records returned. 158 records returned.
+-- Enter a comment with the number of records returned. 144 records returned.
 SELECT *
 FROM employees
-WHERE gender = 'm' AND first_name = 'Irene' OR 'Vidya' OR 'Maya';
+WHERE gender = 'm' AND first_name = 'Irena' OR 'Vidya' OR 'Maya';
 -- Find all current or previous employees whose last name starts with 'E'. 
 -- Enter a comment with the number of employees whose last name starts with E. 7330 names start with E.
 SELECT *
