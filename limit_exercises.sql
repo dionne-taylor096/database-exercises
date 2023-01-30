@@ -17,8 +17,9 @@ SELECT *
 FROM employees 
 WHERE hire_date LIKE '199%'
 AND birth_date LIKE '%-12-25'
-ORDER BY hire_date ASC LIMIT 5 OFFSET 50
+ORDER BY hire_date ASC LIMIT 5 OFFSET 45
 -- What is the relationship between OFFSET (number of results to skip), 
 -- LIMIT (number of results per page), and the page number? OFFSET and LIMIT are inherently related based on the multiplication factor of tbe limit and offset.
 -- the first argument represents the number of rows to be returned in the result set; the second argument represents the offset(starting point of the query result).
 -- e.g. limit query result to 5 rows, starting at page 10 or record 50. Each page or batch of records is multiplied by the limit.
+-- page length * n-1 == offset
