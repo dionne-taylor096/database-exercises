@@ -37,4 +37,3 @@ WHERE genre = 'rock'
 OR genre LIKE '%rock';
 -- f. All the albums with a genre of "Rock". Why do these query results not include albums with a 
 -- genre of "Hard rock" or "Progressive rock"? Query results for rock genre alone will only yield an exacty match for rock.
-
