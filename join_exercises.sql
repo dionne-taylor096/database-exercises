@@ -101,7 +101,6 @@ JOIN dept_manager ON dept_emp.emp_no = dept_manager.emp_no
 WHERE salaries.to_date = '9999-1-1' AND dept_manager.to_date = '9999-1-1'
 ORDER BY salary DESC LIMIT 1;
 
-
 -- Determine the average salary for each department. Use all salary information and round your results.
 
 SELECT dept_name, round(avg(salary)) AS 'avg_salary'
@@ -112,5 +111,8 @@ JOIN salaries ON dept_emp.emp_no = salaries.emp_no
 WHERE salaries.to_date = '9999-1-1' AND dept_emp.to_date = '9999-1-1' 
 GROUP BY dept_name
 ORDER BY avg_salary DESC;
+
+
+-- BONUS: Find the names of all current employees, their department name, and their current manager's name.
 
 
