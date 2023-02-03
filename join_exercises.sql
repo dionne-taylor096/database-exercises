@@ -112,7 +112,12 @@ WHERE salaries.to_date = '9999-1-1' AND dept_emp.to_date = '9999-1-1'
 GROUP BY dept_name
 ORDER BY avg_salary DESC;
 
-
 -- BONUS: Find the names of all current employees, their department name, and their current manager's name.
-
-
+SELECT * 
+FROM employees
+JOIN dept_emp USING (emp_no)
+JOIN departments USING (dept_no)
+RIGHT JOIN dept_manager USING (emp_no)
+RIGHT JOIN employees AS Dept_Mng ON dept_manager.emp_no = employees.emp_no
+WHERE dept_manager.to_date > NOW() and dept_emp.to_date > NOW()
+ORDER BY employees.last_name LIMIT 1;
