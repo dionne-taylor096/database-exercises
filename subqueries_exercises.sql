@@ -159,7 +159,7 @@ SELECT COUNT(salary); -- 210 employees
  
 SELECT salary
 FROM salaries 
-WHERE salary BETWEEN '141315.17' and  '158220'
+WHERE salary BETWEEN '141315.17' and  '158220';
 
 select max(salary)
 from salaries
